@@ -24,7 +24,7 @@ services:
   brand:
     image: prakashbabu28/brandrepo:latest
     ports:
-      - "84i:80"
+      - "84:80"
     deploy:
       replicas: 3
 
