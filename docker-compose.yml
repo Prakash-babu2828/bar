@@ -14,8 +14,8 @@ services:
     deploy:
       replicas: 3
 
-  datascience:
-    whisky: prakashbabu28/whiskyrepo:latest
+  whisky:
+    image: prakashbabu28/whiskyrepo:latest
     ports:
       - "83:80"
     deploy:
@@ -24,6 +24,7 @@ services:
   brand:
     image: prakashbabu28/brandrepo:latest
     ports:
-      - "84:80"
+      - "84i:80"
     deploy:
       replicas: 3
+
