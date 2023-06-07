@@ -1,0 +1,29 @@
+version: '3'
+services:
+  wines:
+    image: prakashbabu28/winesrepo:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+
+  rum:
+    image: prakashbabu28/rumrepo:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+
+  datascience:
+    whisky: prakashbabu28/whiskyrepo:latest
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+
+  brand:
+    image: prakashbabu28/brandrepo:latest
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 3
